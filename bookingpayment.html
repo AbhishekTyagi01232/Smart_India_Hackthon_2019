@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PAYMENT</title>
+    <style>
+        body{
+            background-image:url("https://images.unsplash.com/photo-1550769446-e600023dd43f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80");
+             background-size:cover;
+        }
+ .payments{
+     text-align: center;
+     margin-top: 98px;
+    padding-top: 135px;
+ }
+    table{
+        margin: 0 auto;
+        text-align:center;
+    }
+    input {
+        padding-top:10px;
+    }
+    select{   
+    background-color: lightgrey;
+    border: 2px solid #f1f1f1;;
+    border-radius: 8px;
+    height: 36px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 14px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="payments">
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="TLRHY9U3PS7C2">
+        <table>
+        <tr><td  style="font-size: 20px;letter-spacing: 5px;word-spacing: 5px;color: #7c00ef"><input type="hidden" name="on0" value="event payments">HALL PAYMENT</td></tr><tr><td><select name="os0">
+            <option value="pay">pay &#8377;1,000.00 INR 503 (MEETING )</option>
+            <option value="pay">pay &#8377;2,000.00 INR 502 ( AUDITORIUM)</option>
+            <option value="pay">pay &#8377;3,000.00 601 (CONFERENCE) </option>
+            <option value="pay">pay &#8377;4,000.00 604 (  INSITUTIONAL MEETING) </option>
+            <option value="pay">pay &#8377;6,000.00  505 (  INSITUTIONAL AUDITORIUM)</option>
+            <option value="pay">pay &#8377;3,000.00  606 ( INSITUTIONAL CONFERENCE )</option>
+            <option value="pay">pay &#8377;6,000.00 501 ( INDUSTRAIL MEETING) </option>
+            <option value="pay">pay &#8377;7,000.00 507(INDUSTRAIL AUDITORIUM) </option>
+            <option value="pay">pay &#8377;9,000.00 607 (INDUSTRAIL MEETING) </option>
+        </select> </td></tr>
+        </table>
+        <input type="hidden" name="currency_code" value="INR">
+        <input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
+        <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+        </form>
+
+                    </div>  
+
+</body>
+</html>

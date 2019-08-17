@@ -1,0 +1,170 @@
+<html><head>
+    <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <style>
+    
+     
+    body{
+        background-image:url("https://images.unsplash.com/photo-1494426383302-7b9d36a1a028?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80");
+        background-size: cover;
+   
+    }
+    
+    /* form css*/
+    
+    .singnup-login{
+        width:800px;
+        height:600px;
+    }
+    
+    .sign-up{
+    
+        width:338px;
+        height:350px;
+        margin-left:494px;
+        padding:10px;
+        animation: yourAnimation 3s forwards 0s linear;;
+        margin-left: 471px;
+        margin-top: -3px;
+       
+    }
+    
+    @keyframes yourAnimation{
+        0%{
+            transform: translateX(0px) skewX(0px);
+            opacity: 0;
+            }
+        100%{
+            transform: rotate(50deg) skewX(0px);
+            opacity: 1;
+            }
+    }
+    
+    h4{
+        color: 4f4d4d;
+        text-align: center;
+        font-size: 25px;
+        letter-spacing: 5px;
+        margin-left: -59px
+    
+    }
+    form{
+        border: 2px solid white;
+        background-color: white;
+        border-radius:5px;
+        box-shadow:-2px 1px 6px 6px #21212136;
+        background-color: #e1f5e1fa;
+        border: 2px solid #c3f0ff;
+    }
+    
+    form input{
+        width:285px;
+        height:34px;
+        background-color:#f0f0f0;
+        border:1px solid #f0f0f0;
+        box-sizing:border-box;
+        margin:10px;
+        padding: 4px;
+    }
+    
+    .com{
+    
+    width:135px;
+    height:33px;
+    display:inline-block;
+    margin-right:0px;
+    }
+    button{
+        width:95px;
+        height:34px;
+        background-color:#fea15d;
+        margin-left:100px;
+          margin-top:20px;
+          border: 0px solid #fea15d;;
+          
+          
+    }
+    input:password{
+    
+    }
+    
+     button.colr{
+    
+    background-color:#a9dd7d;
+    
+    }
+    ::-webkit-input-placeholder{
+        color:gray;
+    }
+    
+    ::-webkit-input-required{
+       border-color:lightgreen;
+    }
+    input{
+        caret-color: #e26408;
+    }
+    
+    input:valid{
+        border:solid lightgreen 2px;
+    }
+    input:invalid{
+        border:solid red 2px;
+    }
+    textarea{
+        width: 281px;
+        height: 148px;
+        resize: horizontal;
+        margin-left: 11px;
+        border: 2px solid lightgreen;
+        margin-top: 4px;
+        color: gray;
+        background-color: #efefef
+    }
+    /* form css end signup  and css*/
+    </style>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap-grid.css" />
+    
+    
+    
+    </script>
+    
+    
+    </head>
+    
+    <body>
+        
+        <!-- signup and  login form start-->         
+        <h4>CONTACT US</h4>                    
+         <div class="singnup-login animated shake"  > 
+                                <div class="row">
+                                        <div class="col-lg-6 col-md-4 col-sm-2   col-xs-1">
+                                                <div class="sign-up ">
+                                                 
+                                                            <form class="animated slideIn delay-2s" autocomplete="on">
+                                                            <input  class="com" type="text" maxlength="20"  placeholder="First Name" autofocus="on">
+                                                            <input class="com" type="text"  maxlength="20"placeholder="Last Name" >
+                                                            <input type="email" placeholder="Email" >
+                                                            <input type="tel"  max-length="10"placeholder="Mobileno.">
+                                                            <textarea> comment suggestion</textarea>
+                                                             <button onclick="popup()"> Submit</button>
+                                                               </form>
+                                                                          </div>
+                                                                                     </div>  
+                                                                                              </form>
+                                                                            </div>
+                                                                                    </div> 
+                                                                                           
+    
+    <script>
+        function popup()
+        {
+        swal("Thank You!", "You have submitted!", "success");
+    }
+    </script>
+    
+                                                                                    <!-- signup and  login form end-->                                 
+    </body>
+    
+    </html>

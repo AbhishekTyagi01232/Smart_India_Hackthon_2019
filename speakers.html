@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href=".\images\logo.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/registration.css">    
+    <title>speakers</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <ul class="navbar-nav">
+     <li class="nav-item">
+        <a class="nav-link" href="index.php"><i class="fa fa-home"></i> HOME</a>
+            </li>
+      <li class="nav-item">
+        <a class="nav-link"  href="#first">COORDINATOR</a>
+        
+                </li>
+      <li class="nav-item">
+          <div class="dropdown">
+              <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+           INSTITUTION 
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="college.html" target="_self">COLLEGE</a>
+                <a class="dropdown-item" href="school.html" target="_self">SCHOOL</a>
+              </div>
+            </div>
+            <li class="nav-item">
+              <div class="dropdown">
+                  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+              INITAITIVE
+                  </button>
+                  <div class="dropdown-menu">
+                  <a class="dropdown-item" href="college.html" target="_self">SMART INDIA HAKATHON</a>
+                  <a class="dropdown-item" href="https://swayam.gov.in/" > SWAYAM</a>
+                  </div>
+              </div>
+                  </li>
+          
+            
+      <li class="nav-item">
+        <a class="nav-link"   href="speakers.html" target="_self">SPEAKERS</a>
+                </li>
+      <li class="nav-item">
+        <a class="nav-link"  href="industries.html" target="_self">INDUSTRIES</a>
+                </li>
+
+                                </ul>                                                    </nav>
+
+        
+    <!-- form for speakers start-->
+    <h3 style="text-align:center; padding:20px ;margin-bottom:-37px;font-size: 25px;"> SPEAKERS  REGISTRATION</h3>
+<div class="container" id="dis-form3">
+        <form action="speakers.php" method="post">
+          <div class="form-group">
+            <label for="name">NAME:</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder=" Enter Name" pattern="[a-zA-Z]{4,40}" title="enter proper format" required>
+          </div>
+          <div class="form-group">
+            <label for="date of birth">D.O.B</label>
+            <input type="date" class="form-control" id="dob" name="dob" placeholder="Enter D.O.B" required>
+          </div>
+          <div class="form-group">
+            <label for="pn">PHONE NO.</label>
+            <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter Mobile Number"  pattern="[7 8 9][0-9]{9}" title="enter proper format" required>
+          </div>
+          
+        <div class="form-group">
+            <label for="mail">EMAIL</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Enter Email" required>
+          </div>
+          <div class="form-group">
+            <label for="pwd">PASSWORD</label>
+            <input type="password" class="form-control" id="pass" name="pass" placeholder="Enter password" required >
+          </div>
+          <div class="form-group">
+            <label for="add."> CONFIRM PASSWORD</label>
+            <input type="password" class="form-control"  placeholder=" Confirm Password" required>
+               </div>
+               <div class="form-group">
+     
+      <label>SELECT EVENT CODE</label>
+      <select id="event_code" name="event_code" class="custom-select" >
+        
+        <option value="503">503 (Machine Learning)</option>
+        <option value="502">502 (Cloud Computing)</option>
+        <option value="601">601 (Data Mining)</option>
+        <option value="604">604 (Professional Communication )</option>
+        <option value="505">505 (Finance)</option>
+        <option value="606">606 (Management)</option>
+        <option value="501">501 (Medical)</option>
+        <option value="507">507(Agriculture)</option>
+        <option value="607">607 (Metal)</option>
+        <option value="609">609 (Fashion Designing)</option>
+      </select></div>
+      
+      <div class="form-group">
+            <label for="add.">ADDRESS</label>
+            <input type="text" class="form-control" id="address" name="address" placeholder="Enter Address" pattern="[a-zA-Z ]{,30}" title="enter proper format"  required>
+          </div>
+          <div class="form-group">
+            <label for="pwd">HIGHEST QUALIFICATION</label>
+              <input type="text" class="form-control" id="hqualification" name="hqualification" placeholder="Enter  Qualification" pattern="[a-zA-Z]{,30}" title="enter proper format"  required>
+                    </div>
+          <div class="form-group">
+          <label for="pwd">SPEAKING EXPERIENCE</label>
+            <input type="text" class="form-control" id="experience" name="experience" placeholder="Enter Speaking Experience" min="0" title="enter proper experience"  required>
+                  </div>
+          <div class="form-group">
+              <label for="pwd">TOPIC/SUBJECT </label>
+                <input type="text" class="form-control" id="topic" name="topic" placeholder="Enter Topic/Subject" pattern="[a-zA-Z]{,30}" title="enter proper format"  required>
+                      </div>
+                       <label> GENDER</label> <div class="custom-control custom-checkbox">
+      <div class="form-check-inline">
+        <label class="form-check-label">
+          <input type="radio" value="male" id="gender" name="gender" class="form-check-input" >MALE
+        </label>
+      </div>
+      <div class="form-check-inline">
+        <label class="form-check-label">
+          <input type="radio" value="female" id="gender" name="gender" class="form-check-input" >FEMALE
+        </label>
+      </div>
+      <div class="form-check-inline">
+        <label class="form-check-label">
+          <input type="radio" value="other" id="gender" name="gender" class="form-check-input" >OTHER
+        </label>
+      </div>
+            
+          <select name="handicapped" id="handicapped" class="custom-select">
+            <option>Handicapped</option>
+            <option value="no">NO</option>
+            <option value="yes">YES</option>
+          </select>
+          <div class="form-group form-check">
+            <label  class="form-check-label">
+              <input  class="form-check-input" type="checkbox" name="remember"> I agree to terms and condition </label>
+                 </div>
+          <button type="submit" class="btn btn-info">Submit</button>
+        </form>
+      </div>
+      <!-- form for speakers end-->
+      <footer>
+            <nav class="navbar navbar-expand-sm bg-light justify-content-center">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Terms Of Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="complain.html">Grievance</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="feedback.html">Feedback</a>
+                  </li>
+                  <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                      </li>
+                </ul>
+              </nav>
+                </body>
+                          </html>      

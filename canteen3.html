@@ -1,0 +1,171 @@
+<html><head>
+        <title></title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap-grid.css" />
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>  
+      
+        <style>
+        
+                
+
+        /* form css*/
+        body{
+            background-image:url("https://images.unsplash.com/photo-1504940892017-d23b9053d5d4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1544&q=80");
+             background-size:cover;
+             width:100%;
+             height:100%;
+        }
+        .singnup-login{
+        width: 1347px;
+        height: 650px;
+        margin-top: -7px;
+        margin-left: -6px;
+        }
+            h4 {
+            font-size: 27px;
+            text-align: center;
+            letter-spacing: 5px;
+            color: white!important;
+        }
+        .sign-up{
+        
+            width:338px;
+            height:350px;
+            margin: 0 auto;
+            padding-top: 100px;
+            animation: yourAnimation 3s forwards 0s linear;;
+        }
+        
+        @keyframes yourAnimation{
+            0%{
+                transform: translateX(0px) skewX(0px);
+                opacity: 0;
+                }
+            100%{
+                transform: rotate(50deg) skewX(0px);
+                opacity: 1;
+                }
+        }
+        
+        h4{
+        
+            color:4f4d4d;
+        }
+        form{
+            border: 2px solid white;
+            background-color: white;
+            border-radius:5px;
+            box-shadow:-2px 1px 6px 6px #21212136;
+            height: 239px;
+          
+        }
+        form input{
+            width:285px;
+            height:34px;
+            background-color:#f0f0f0;
+            border:1px solid #f0f0f0;
+            box-sizing:border-box;
+            margin-left: 22px;
+            margin-top: 23px;
+            padding-left: 5px
+        }
+        
+        .com{
+        
+        width:135px;
+        height:33px;
+        display:inline-block;
+        margin-right:0px;
+        }
+        label{
+        display: flex;
+        justify-content: center;
+        margin-top: 13px;
+        }
+        button{
+            width:95px;
+            height:34px;
+            background-color:#fea15d;
+            margin-left:115px;;
+              margin-top:20px;
+              border: 0px solid #fea15d;;              
+        }
+        input:password{
+        
+        }
+        
+         button.colr{
+        
+        background-color:#a9dd7d;
+        
+        }
+        ::-webkit-input-placeholder{
+            color:gray;
+        }
+        
+        ::-webkit-input-required{
+           border-color:lightgreen;
+        }
+        input{
+            caret-color: #e26408;
+        }
+        
+        input:valid{
+            border:solid lightgreen 2px;
+        }
+        input:invalid{
+            border:solid red 2px;
+        }
+        select{
+            width: 285px;
+            height: 34px;
+            margin-left: 21px;
+            border: solid lightgreen 2px;
+            background-color: #f0f0f0;
+            color: gray;
+            margin-top: 13px;
+        }
+        a{
+        border: 2px solid lightgreen;
+        margin-left: 133px;
+        box-sizing: border-box;
+        background-color: lightgreen;
+        text-decoration: none;
+        color: gray;
+        }
+        </style>
+        
+          </head>
+        
+        <body>
+
+        
+            <!-- signup and  login form start-->                              <!--animated rightIn-->
+             <div class="singnup-login > 
+                                    <div class="row">
+                            <div class="col-lg-12 col-md-4 col-sm-2   col-xs-1">
+                                                         <div class="sign-up">
+                                                           
+                                                                <form class="animated " action="login.php" method="POST" autocomplete="off">
+                                                                        <label>COUSINE</label>
+                                                                    <select id="user" name="user"> 
+                                                                            <option value="2"> PASTA</option>
+                                                                            <option value="3">THALI </option>
+                                                                            <option value="4">PIZZA</option>
+                                                                            <option value="5">IDLI</option>
+                                                                        </select>
+                                                                 <label> ADD COMMENT</label>
+                                                                    <input  style="margin-bottom: 20px;"type="text" name = "email" id="NO THE ORDER" placeholder="ADD COMMENT">
+                                                                    
+                                                                    <a href="canteen4.html"  target="_self">NEXT</a>
+                                                                
+                                                                             </form>
+                                                                                </div>
+                                                                                     </div> 
+                                                                                            </div>   
+                                                                                            
+    
+                                                                                            <!-- signup and  login form end-->                                 
+        </body>
+        
+        </html>
